@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Diacritics Eraser</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="images/favicon-32.png" sizes="32x32">
+    <link rel="shortcut icon" href="images/favicon-128.png" sizes="128x128">
+    <link rel="shortcut icon" href="images/favicon-180.png" sizes="180x180">
+    <link rel="shortcut icon" href="images/favicon-192.png" sizes="192x192"> -->
+
+    <!-- Roboto Mono from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Diacritics Eraser</h1>
+    </header>
+
+
+
+    <main>
+        <textarea id="textbox"></textarea>
+
+        <div class="button-area">
+            <button class="buttons" id="erase" onclick="eraseDiacritics()">Erase Diacritics</button>
+            <button class="buttons" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>© 2022 M.J Brechner</p>
+    </footer>
+
+    <script src="javascript/index.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+* {
+    background-color: rgb(224, 222, 222);
+    color: rgb(31, 31, 31);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+h1 {
+    font-weight: 700;
+}
+
+#textbox {
+    background-color: rgb(243, 243, 243);
+    width: 98%;
+    height: 100px;
+    font-size: 1em;
+    border-width: 2px;
+    border-radius: 5px;
+    text-align: left;
+    resize: none;
+}
+
+.buttons {
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+footer {
+    justify-items: center;
+}
