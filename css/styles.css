@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+    font-size: 1.5em;
     font-weight: 700;
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
 }
@@ -36,26 +37,55 @@ h1 {
 .buttons {
     background-color: rgb(190, 190, 190);
     color: rgb(31, 31, 31);
-    width: 200px;
-    height: 50px;
-    font-size: 1em;
-    font-weight: 700;
-    text-shadow: .5px .5px 1px rgb(104, 34, 104);
+    width: 125px;
+    height: 40px;
+    font-size: .75em;
+    font-weight: 400;
+    text-shadow: .4px .4px .75px rgb(104, 34, 104);
     border-color: rgb(31, 31, 31);
-    box-shadow: 1.5px 1.5px rgb(104, 34, 104);
+    box-shadow: 1px 1.5px rgb(104, 34, 104);
     border-radius: 5px;
     cursor: pointer;
 }
 
 .buttons:active {
     color: rgb(104, 34, 104);
-    text-shadow: .5px .5px 1px rgb(31, 31, 31);
+    text-shadow: .4px .4px .75px rgb(31, 31, 31);
     transform: translate(1px);
+    box-shadow: 1px 1px rgb(173, 111, 173);
+}
+
+footer {
+    margin-top: 1.5em;
+    font-size: .75em;
+    justify-items: center;
+    text-shadow: .5px .5px 1px rgb(104, 34, 104);
+}
+
+/*tablet and above query*/
+@media only screen and (min-width: 768px) {
+
+h1 {
+    font-size: 2em;
+}
+
+.buttons {
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: 700;
+    text-shadow: .5px .5px 1px rgb(104, 34, 104);
+    box-shadow: 1.5px 1.5px rgb(104, 34, 104);
+}
+
+.buttons:active {
+    text-shadow: .5px .5px 1px rgb(31, 31, 31);
     box-shadow: 1.5px 1.5px rgb(173, 111, 173);
 }
 
 footer {
     margin-top: 2em;
-    justify-items: center;
-    text-shadow: .5px .5px 1px rgb(104, 34, 104);
+    font-size: 1em;
+}
+
 }
