@@ -60,10 +60,19 @@ function eraseDiacritics() {
 // Copy text to clipboard
 function copyToClipboard() {
     let e = document.getElementById("textbox").value
-    if (e !== ``) {
+    if (e) {
         navigator.clipboard.writeText(e);
-        alert("Text copied to clipboard");
+        document.getElementById("copied-notice").textContent = "Text copied";
+        document.getElementById("copied-notice").style.visibility = "visible";
+        setTimeout(copiedNoticeFinish, 1500);
     } else {
-        alert("no text to copy");
+        document.getElementById("copied-notice").textContent = "No text to copy";
+        document.getElementById("copied-notice").style.visibility = "visible";
+        setTimeout(copiedNoticeFinish, 2000);
     }
+}
+
+// Return "text copied" message to hidden
+function copiedNoticeFinish() {
+    document.getElementById("copied-notice").style.visibility = "hidden";
 }

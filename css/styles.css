@@ -14,6 +14,13 @@ h1 {
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #textbox {
     background-color: rgb(250, 250, 250);
     width: 85%;
@@ -55,10 +62,21 @@ h1 {
     box-shadow: 1px 1px rgb(173, 111, 173);
 }
 
+#copied-notice {
+    background-color: rgb(104, 34, 104);
+    color: rgb(250, 250, 250);
+    width: fit-content;
+    justify-content: center;
+    padding: .25em .5em;
+    margin-top: .5em;
+    font-size: .75em;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
 footer {
     margin-top: 1.5em;
     font-size: .75em;
-    justify-items: center;
     text-shadow: .5px .5px 1px rgb(104, 34, 104);
 }
 
@@ -86,6 +104,12 @@ footer {
     .buttons:active {
         text-shadow: .5px .5px 1px rgb(31, 31, 31);
         box-shadow: 1.5px 1.5px rgb(173, 111, 173);
+    }
+
+    #copied-notice {
+        padding: .35em .6em;
+        margin-top: 1em;
+        font-size: 1em;
     }
 
     footer {
