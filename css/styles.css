@@ -19,16 +19,10 @@ h1 {
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
 }
 
-.title-display:hover {
-    animation-name: erasing-animation;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-}
-
 #erasing-r {
     animation-name: erasing-animation;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 20s;
 }
 
 @keyframes erasing-animation {
