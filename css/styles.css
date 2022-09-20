@@ -8,10 +8,33 @@ body {
     text-align: center;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
     font-size: 1.5em;
     font-weight: 700;
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
+}
+
+.title-display:hover {
+    animation-name: erasing-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+#erasing-r {
+    animation-name: erasing-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes erasing-animation {
+    0% {opacity: 100%;}
+    50% {opacity: 25%;}
+    100% {opacity: 100%;}
 }
 
 main {
@@ -75,16 +98,16 @@ main {
 }
 
 .about {
+    width: 85%;
     text-align: left;
     text-indent: 2%;
-    margin: auto 5%;
     font-size: .75em;
     text-shadow: .5px .5px 1px rgb(104, 34, 104);
 }
 
 footer {
     margin-top: 1em;
-    font-size: .75em;
+    font-size: .8em;
     text-shadow: .5px .5px 1px rgb(104, 34, 104);
 }
 
@@ -126,7 +149,7 @@ footer {
 
     footer {
         margin-top: 1.25em;
-        font-size: .85em;
+        font-size: .9em;
     }
 
 }
@@ -164,12 +187,10 @@ footer {
     }
 
     .about {
-        font-size: 1em;
+        font-size: .95em;
     }
 
     footer {
         font-size: 1em;
     }
-
-
 }
