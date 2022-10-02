@@ -101,9 +101,25 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1em;
     font-size: .8em;
     text-shadow: .5px .5px 1px rgb(104, 34, 104);
+}
+
+a {
+    color: rgb(31, 31, 31);
+    text-shadow: .5px .5px 1px rgb(104, 34, 104);
+    text-decoration: underline;
+}
+
+.profile-pic {
+    width: 3.25em;
+    height: 3.25em;
+    padding: 1px;
 }
 
 /*tablet query*/
@@ -144,10 +160,15 @@ footer {
     }
 
     footer {
+        flex-direction: row;
         margin-top: 1.25em;
         font-size: .9em;
     }
 
+    .profile-pic {
+    width: 3.5em;
+    height: 3.5em;
+}
 }
 
 /*desktop query*/
@@ -190,4 +211,9 @@ footer {
     footer {
         font-size: 1em;
     }
+
+    .profile-pic {
+    width: 3.75em;
+    height: 3.75em;
+}
 }
