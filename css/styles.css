@@ -26,9 +26,17 @@ h1 {
 }
 
 @keyframes erasing-animation {
-    0% {opacity: 100%;}
-    50% {opacity: 25%;}
-    100% {opacity: 100%;}
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 main {
@@ -166,9 +174,9 @@ a {
     }
 
     .profile-pic {
-    width: 3.5em;
-    height: 3.5em;
-}
+        width: 3.5em;
+        height: 3.5em;
+    }
 }
 
 /*desktop query*/
@@ -213,7 +221,7 @@ a {
     }
 
     .profile-pic {
-    width: 3.75em;
-    height: 3.75em;
-}
+        width: 3.75em;
+        height: 3.75em;
+    }
 }
