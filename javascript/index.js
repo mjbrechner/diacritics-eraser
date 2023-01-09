@@ -76,3 +76,8 @@ function copyToClipboard() {
 function copiedNoticeFinish() {
     document.getElementById("copied-notice").style.visibility = "hidden";
 }
+
+// Clear textbox of all text
+function clearText() {
+    document.getElementById("textbox").value = "";
+}
