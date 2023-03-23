@@ -55,6 +55,7 @@ function eraseDiacritics() {
         .replace(/[ẂŴẄẀ]/g, 'W')
         .replace(/[ÝŶŸẎỴỲƳỶȲỸ]/g, 'Y')
         .replace(/[ŹŽŻẒẔƵ]/g, 'Z')
+        .replace(/[’ʼ]/g, '\'')
 }
 
 // Copy text to clipboard
