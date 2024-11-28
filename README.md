@@ -5,4 +5,4 @@ This is a simple tool to convert diacritics, ligatures, and other special charac
 
 Viewable at https://mjbrechner.github.io/diacritics-eraser/
 
-© 2022 M.J. Brechner
+© 2022-2024 M.J. Brechner
