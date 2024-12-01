@@ -6,7 +6,10 @@ function eraseDiacritics() {
     let textboxContents = document.getElementById("textbox").value;
 
     if (textboxContents) {
-        document.getElementById("textbox").value = textboxContents.replace(/([a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\u2C60-\u2C7F\uA720-\uA7FF\uAB30-\uAB6B])\./g, "$1. ").trimEnd();
+        // Replaces character+period with character+period+space, using character sets that do not include numerals and punctuation.
+        document.getElementById("textbox").value = textboxContents.replace(/([a-zA-Z\u00C0-\u024F\u1E00-\u1EFF\u2C60-\u2C7F\uA720-\uA7FF\uAB30-\uAB6B])\./g, "$1. ");
+        // Replaces extra spaces (which may either be already present or created by the previous line of code) with a single space. Also trims spaces at the end.
+        document.getElementById("textbox").value = textboxContents.replace(/\s+/g, ' ').trimEnd();
         let fixedText = document.getElementById("textbox").value;
         navigator.clipboard.writeText(fixedText);
         document.getElementById("copied-notice").textContent = "Text copied";

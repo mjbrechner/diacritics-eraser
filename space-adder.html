@@ -31,11 +31,12 @@
 
         <div class="button-area">
             <button class="buttons" id="erase" onclick="eraseDiacritics()">Add Spaces & Copy to Clipboard</button>
-            <!-- <button class="buttons" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button> -->
             <button class="buttons" id="copy" onclick="clearText()">Clear Text</button>
         </div>
         <div id="copied-notice">Text copied</div>
-        <div class="about">This tool adds blank spaces after periods except when the period follows a number, punctuation mark, or blank space.</div>
+        <div class="about">This tool adds blank spaces after periods except when the period follows a number, punctuation mark, or blank space. 
+            Any instance of multiple consecutive spaces are reduced to become a single space.
+        </div>
     </main>
 
     <footer>
