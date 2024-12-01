@@ -20,6 +20,13 @@ h1 {
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
 }
 
+.linker {
+position: absolute;
+top: 5px;
+right: 5px;
+font-size: 14px;
+}
+
 #erasing-r {
     animation-name: erasing-animation;
     animation-iteration-count: infinite;

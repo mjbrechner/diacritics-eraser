@@ -63,11 +63,11 @@ function copyToClipboard() {
     let e = document.getElementById("textbox").value
     if (e) {
         navigator.clipboard.writeText(e);
-        document.getElementById("copied-notice").textContent = "Text copied";
+        document.getElementById("copied-notice").textContent = "Spaces added and text copied to clipboard";
         document.getElementById("copied-notice").style.visibility = "visible";
         setTimeout(copiedNoticeFinish, 1500);
     } else {
-        document.getElementById("copied-notice").textContent = "No text to copy";
+        document.getElementById("copied-notice").textContent = "No text available";
         document.getElementById("copied-notice").style.visibility = "visible";
         setTimeout(copiedNoticeFinish, 2000);
     }
