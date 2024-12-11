@@ -58,6 +58,34 @@ function eraseDiacritics() {
         .replace(/[’ʼ]/g, '\'')
 }
 
+function convertGermanDiacritics() {
+    let e = document.getElementById("textbox").value;
+    document.getElementById("textbox").value = e.replace(/[ä]/g, 'ae')
+        .replace(/[Ä]/g, 'Ae')    
+        .replace(/[ö]/g, 'oe')
+        .replace(/[Ö]/g, 'Oe')
+        .replace(/[ü]/g, 'ue')
+        .replace(/[Ü]/g, 'Ue')
+        .replace(/[ß]/g, 'ss')
+        .replace(/[ẞ]/g, 'SS')
+}
+
+function convertEsperantoDiacritics() {
+    let e = document.getElementById("textbox").value;
+    document.getElementById("textbox").value = e.replace(/[ĉ]/g, 'cx')
+        .replace(/[Ĉ]/g, 'Cx')    
+        .replace(/[ĝ]/g, 'gx')
+        .replace(/[Ĝ]/g, 'Gx')
+        .replace(/[ĥ]/g, 'hx')
+        .replace(/[Ĥ]/g, 'Hx')
+        .replace(/[ĵ]/g, 'jx')
+        .replace(/[Ĵ]/g, 'Jx')
+        .replace(/[ŝ]/g, 'sx')
+        .replace(/[Ŝ]/g, 'Sx')
+        .replace(/[ŭ]/g, 'ux')
+        .replace(/[Ŭ]/g, 'Ux')
+}
+
 // Copy text to clipboard
 function copyToClipboard() {
     let e = document.getElementById("textbox").value
@@ -82,3 +110,9 @@ function copiedNoticeFinish() {
 function clearText() {
     document.getElementById("textbox").value = "";
 }
+
+// TO DO: figure out a way for transliterations that involve changing a single capitalized character to two characters (e.g. Æ to AE) to have
+// only the first character capitalized if other lowercase letters are present in the text, but to have both characters capitalized if
+// lowercase characters are absent. That would be one method of avoiding a situation in which an otherwise ALL CAPS text is interrupted by
+// the presence of second-character lowercase forms while ensuring that any other text (that could have a mix of uppercase and lowercase characters)
+// will only display the first-character uppercase with these converted characters (e.g. Æ to Ae).
