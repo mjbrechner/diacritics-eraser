@@ -20,9 +20,24 @@ h1 {
     text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
 }
 
+.title-display-languages {
+    font-size: 1.25em;
+    justify-content: end;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: .75px .75px 1.5px rgb(104, 34, 104);
+}
+
 .linker {
     position: absolute;
     top: 5px;
+    right: 5px;
+    font-size: 14px;
+}
+
+.linker2 {
+    position: absolute;
+    top: 20px;
     right: 5px;
     font-size: 14px;
 }
@@ -163,6 +178,10 @@ a {
         font-size: 1.85em;
     }
 
+    .title-display-languages {
+        font-size: 1.35em;
+    }
+
     .buttons {
         /* width: 150px; */
         width: 165px;
@@ -190,6 +209,10 @@ a {
     h1 {
         margin: .25em 0 .25em 0;
         font-size: 2.05em;
+    }
+
+    .title-display-languages {
+        font-size: 1.55em;
     }
 
     #textbox {
@@ -244,6 +267,10 @@ a {
 
     h1 {
         margin: .5em 0 .5em 0;
+        font-size: 2.15em;
+    }
+
+    .title-display-languages {
         font-size: 2.15em;
     }
 

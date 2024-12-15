@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Diacritics Eraser</title>
+    <title>Diacritics Eraser for Languages</title>
     <meta name="description" content="Tool to erase diacritics from text">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicons created by M.J. Brechner © 2022 -->
@@ -22,32 +22,22 @@
 
 <body>
     <header>
-        <h1 class="title-display">Diacritics Erase</h1>
-        <h1 class="title-display" id="erasing-r">r</h1>
-        <a class="linker" href="space-adder.html">Space Adder</a>
-        <a class="linker2" href="languages.html">Languages</a>
+        <div></div>
+        <h1 class="title-display-languages">Diacritics Eraser for specific languages</h1>
+        <a class="linker" href="index.html">Main</a>
     </header>
 
     <main>
         <textarea id="textbox" aria-label="text"></textarea>
-
         <div class="button-area">
-            <button class="buttons" id="erase" onclick="eraseDiacritics()">Erase Diacritics</button>
+            <button class="buttons" id="erase" onclick="convertGermanDiacritics()">Convert German Diacritics</button>
+            <button class="buttons" id="erase" onclick="convertEsperantoDiacritics()">Convert Esperanto Diacritics</button>
             <button class="buttons" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
             <button class="buttons" id="copy" onclick="clearText()">Clear Text</button>
         </div>
         <div id="copied-notice">Text copied</div>
-        <div class="about">This is a simple tool to convert diacritics, ligatures, and other special characters into the
-            basic set of 26 English letters popularly used in contemporary times. But with this tool comes the plea for
-            English-language users to broaden their linguistic horizons to incorporate more than these mere 26 unadorned
-            letters. The English language itself has a richer variety of characters that have been largely lost to time,
-            and the ability to handle more than the standard character set is a boon in handling words from other
-            languages as well. This tool also converts characters as <i>æ</i>, <i>œ</i>, and <i>ß</i> to <i>ae</i>, <i>oe</i>,
-            and <i>ss</i>, respectively.</div>
-            <br>
-        <div class="about">The Diacritics Eraser now also converts variations on the apostrophe
-            – specifically the typographic or curly apostrophe (’) and the modified letter apostrophe (ʼ) – to become
-            a vertical apostrophe (').
+        <div class="about">This is variation on the main "Diacritics Eraser" tool that provides options for transliterating German and Esperanto into the set of 26
+            contemporary English letters without using diacritics.
         </div>
     </main>
 
