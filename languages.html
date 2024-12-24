@@ -22,8 +22,16 @@
 
 <body>
     <header>
-        <div></div>
-        <h1 class="title-display-languages">Diacritics Eraser for specific languages</h1>
+        <div class="specific-languages-header">
+            <div class="specific-languages-title">
+                <h1>Diacritics Erase</h1>
+                <h1 id="erasing-r">r</h1>
+            </div>
+
+            <div class="specific-languages-subtitle">
+                <h2>(for specific languages)</h2>
+            </div>
+        </div>
         <a class="linker" href="index.html">Main</a>
     </header>
 
@@ -31,12 +39,14 @@
         <textarea id="textbox" aria-label="text"></textarea>
         <div class="button-area">
             <button class="buttons" id="erase" onclick="convertGermanDiacritics()">Convert German Diacritics</button>
-            <button class="buttons" id="erase" onclick="convertEsperantoDiacritics()">Convert Esperanto Diacritics</button>
+            <button class="buttons" id="erase" onclick="convertEsperantoDiacritics()">Convert Esperanto
+                Diacritics</button>
             <button class="buttons" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
             <button class="buttons" id="copy" onclick="clearText()">Clear Text</button>
         </div>
         <div id="copied-notice">Text copied</div>
-        <div class="about">This is variation on the main "Diacritics Eraser" tool that provides options for transliterating German and Esperanto into the set of 26
+        <div class="about">This is variation on the main "Diacritics Eraser" tool that provides options for
+            transliterating German and Esperanto into the set of 26
             contemporary English letters without using diacritics.
         </div>
     </main>
